@@ -26,9 +26,15 @@ export default function Home() {
           type
         })
       });
-      const { completion } = await data.json();
-      setCompletion(completion);
-      setQuerying(false);
+      if (data.ok) {
+        const { completion } = await data.json();
+        setCompletion(completion);
+        setQuerying(false);
+      } else {
+        setQuerying(false);
+        console.log(data);
+        alert('Ocurrió un error');
+      }
     } catch (error) {
       setQuerying(false);
       console.log(error);

@@ -17,10 +17,10 @@ export default async function handler(req, res) {
 
             switch (type) {
                 case 1:
-                    instruction = 'Crea una clase divertida a partir de mis apuntes de clase. Que sea en máximo 100 palabras';
+                    instruction = 'Crea una clase divertida a partir de mis apuntes de clase. Que sea en máximo 200 palabras';
                     break;
                 case 2:
-                    instruction = 'Hazme preguntas reflexivas sobre mis apuntes de clase y respondelas. Que sea en máximo 200 palabras';
+                    instruction = 'Hazme preguntas de examen sobre mis apuntes de clase y respondelas. Que sea en máximo 200 palabras';
                     break;
                 case 3:
                     instruction = 'Dime algo interesante sobre el siguiente texto en solo tres palabras';
